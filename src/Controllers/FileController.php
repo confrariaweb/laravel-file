@@ -1,11 +1,11 @@
 <?php
 
-namespace ConfrariaWeb\Blog\Controllers;
+namespace ConfrariaWeb\File\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class BlogController extends Controller {
+class FileController extends Controller {
 
     protected $data;
 
@@ -15,11 +15,11 @@ class BlogController extends Controller {
 
     public function index() {
         //$this->data['accounts'] = resolve('AccountService')->all();
-        return view(viewTemplate('index', 'blog'), $this->data);
+        return view(viewTemplate('index', 'file'), $this->data);
     }
 
     public function create() {
-        return view(viewTemplate('create', 'blog'));
+        return view(viewTemplate('create', 'file'));
     }
 
     public function store(Request $request) {
@@ -30,12 +30,12 @@ class BlogController extends Controller {
 
     public function show($id) {
         $data['account'] = resolve('AccountService')->find($id);
-        return view(viewTemplate('show', 'blog'), $data);
+        return view(viewTemplate('show', 'file'), $data);
     }
 
     public function edit($id) {
         $data['account'] = resolve('AccountService')->find($id);
-        return view(viewTemplate('edit', 'blog'), $data);
+        return view(viewTemplate('edit', 'file'), $data);
     }
 
     public function update(Request $request, $id) {

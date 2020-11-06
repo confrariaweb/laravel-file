@@ -1,6 +1,6 @@
-# Package Blog Laravel
+# Package File Laravel
 
-Basic blog package for laravel
+Basic file package for laravel
 
 ## License
 

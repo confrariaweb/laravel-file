@@ -1,11 +1,11 @@
 <?php
 
-namespace ConfrariaWeb\Blog\Providers;
+namespace ConfrariaWeb\File\Providers;
 
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
 
-class BlogEventServiceProvider extends ServiceProvider {
+class FileEventServiceProvider extends ServiceProvider {
 
     protected $listen = [
         /*Registered::class => [

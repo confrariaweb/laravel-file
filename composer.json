@@ -1,9 +1,9 @@
 {
-    "name": "confrariaweb/laravel-blog",
+    "name": "confrariaweb/laravel-file",
     "version": "dev-master",
-    "description": "Laravel blog package",
+    "description": "Laravel file package",
     "keywords": [
-        "blog",
+        "file",
         "framework",
         "laravel"
     ],
@@ -16,22 +16,19 @@
         }
     ],
     "require": {
-        "confrariaweb/laravel-template-admin-default": "dev-master",
-        "confrariaweb/laravel-template": "dev-master",
-        "confrariaweb/laravel-user": "dev-master",
         "confrariaweb/laravel-vendor": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "ConfrariaWeb\\Blog\\": "src",
-            "ConfrariaWeb\\Blog\\Databases\\Seeds\\": "databases/Seeds"
+            "ConfrariaWeb\\File\\": "src",
+            "ConfrariaWeb\\File\\Databases\\Seeds\\": "databases/Seeds"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "ConfrariaWeb\\Blog\\Providers\\BlogServiceProvider",
-                "ConfrariaWeb\\Blog\\Providers\\BlogEventServiceProvider"
+                "ConfrariaWeb\\File\\Providers\\FileServiceProvider",
+                "ConfrariaWeb\\File\\Providers\\FileEventServiceProvider"
             ]
         }
     },
